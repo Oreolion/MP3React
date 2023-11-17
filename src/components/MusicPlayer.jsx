@@ -43,8 +43,8 @@ const MusicPlayer = () => {
   //update song details
 
   function loadSongs(song) {
-    const audioElement = document.getElementsByTagName("audio");
-    const imageElement = document.getElementsByTagName("img");
+    const audioElement = document.getElementByID("audio");
+    const imageElement = document.getElementByID("img");
     audioElement.src = `/src/assets/music/${song}.mp3`;
     imageElement.src = `/src/assets/images/${song}.jpg`;
   }
