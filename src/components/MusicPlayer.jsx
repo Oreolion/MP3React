@@ -129,7 +129,7 @@ const MusicPlayer = () => {
         ></audio>
         <div className="img-container">
           <img
-            src={`../src/assets/images/${songs[songIndex]}.jpg`}
+            src={`/src/assets/images/${songs[songIndex]}.jpg`}
             alt="music-cover"
             id="cover"
           />
