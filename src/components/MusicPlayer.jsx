@@ -45,8 +45,8 @@ const MusicPlayer = () => {
   function loadSongs(song) {
     const audioElement = document.getElementsByTagName("audio");
     const imageElement = document.getElementsByTagName("img");
-    audioElement.src = `../src/assets/music/${song}.mp3`;
-    imageElement.src = `../src/assets/images/${song}.jpg`;
+    audioElement.src = `/src/assets/music/${song}.mp3`;
+    imageElement.src = `/src/assets/images/${song}.jpg`;
   }
 
   function playOrPauseSong() {
