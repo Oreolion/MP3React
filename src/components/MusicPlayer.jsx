@@ -44,7 +44,7 @@ const MusicPlayer = () => {
 
   function loadSongs(song) {
     const audioElement = document.getElementByID("audio");
-    const imageElement = document.getElementByID("img");
+    const imageElement = document.getElementByID("cover");
     audioElement.src = `/src/assets/music/${song}.mp3`;
     imageElement.src = `/src/assets/images/${song}.jpg`;
   }
