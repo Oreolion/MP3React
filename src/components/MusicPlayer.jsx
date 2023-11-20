@@ -25,6 +25,8 @@ const MusicPlayer = () => {
   let [songIndex, setSongIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   useEffect(() => {
+    loadSongs(songs[songIndex]);
+
     anime({
       targets: ".music-container",
       opacity: [0, 1],
@@ -35,10 +37,8 @@ const MusicPlayer = () => {
   }, []);
   const audioElement = document.querySelector("#audio");
   const progressContainer = document.querySelector(".progress-container");
-
   //initially load songs
 
-  loadSongs(songs[songIndex]);
 
   //update song details
 
